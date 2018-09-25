@@ -8,10 +8,6 @@ namespace ConsoleTheater.Models
         public Movie Movie { get; set; }
         private Dictionary<string, int> Showtimes { get; set; }
         public int MaxSeats { get; set; }
-
-        //private things need a Getter
-
-        //Setter for dictionary
         public void AddShowtime(string time)
         {
             Showtimes.Add(time, MaxSeats);
@@ -19,7 +15,6 @@ namespace ConsoleTheater.Models
 
         public void PrintShowtimes()
         {
-            //THIS IS HOW YOU ITERATE OVER A DICTIONARY
             foreach (KeyValuePair<string, int> showtime in Showtimes)
             {
                 Console.WriteLine($"{showtime.Key} -- Available Seats: {showtime.Value}");

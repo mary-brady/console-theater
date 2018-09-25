@@ -15,7 +15,7 @@ namespace ConsoleTheater.Models
         {
             Name = name;
             Movies = new List<Movie>();
-            Concessions = new List<Concession>();
+            // Concessions = new List<Concession>();
         }
     }
 }
